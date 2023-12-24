@@ -56,7 +56,7 @@
         <section id="home">
             <img class="home__avatar" src="images/profile.png" alt="Amy's profile" />
             <h2 class="home__title">Hello <br>I&#39;m <strong class="home__title--strong">designer developer</strong>, Amy</h2>
-            <p class="home__description">A front-end developer who designs website currently residing in Ontario, Canada</p>
+            <p class="home__description">A front-end developer currently residing in Ontario, Canada</p>
             <a class="home__contact_button" href="#contact">Contact Me</a>
         </section>
 
@@ -120,43 +120,43 @@
                             </li>
                         </ul>
                     </section>
-                    <!-- Planning Skills -->
-                    <section class="skills__office">
-                        <h3 class="skills__title">Office Tool Skills</h3>
-                        <ul>
-                            <li>
-                                <div class="bar__metadata"><span>MS Excel</span><span>90%</span></div>
-                                <div class="bar__bg"><div class="bar__value" style="width: 98%"></div></div>
-                            </li>
-                            <li>
-                                <div class="bar__metadata"><span>MS PowerPoint</span><span>90%</span></div>
-                                <div class="bar__bg"><div class="bar__value" style="width: 98%"></div></div>
-                            </li>
-                            <li>
-                                <div class="bar__metadata"><span>MS Words</span><span>90%</span></div>
-                                <div class="bar__bg"><div class="bar__value" style="width: 98%"></div></div>
-                            </li>
-                            <li>
-                                <div class="bar__metadata"><span>Google Docs</span><span>90%</span></div>
-                                <div class="bar__bg"><div class="bar__value" style="width: 98%"></div></div>
-                            </li>
-                        </ul>
-                    </section>
                     <!-- Web Design Skills -->
                     <section class="skills__design">
                         <h3 class="skills__title">Web Design Tool Skills</h3>
                         <ul>
-                            <li>
-                                <div class="bar__metadata"><span>Adobe Figma</span><span>90%</span></div>
-                                <div class="bar__bg"><div class="bar__value" style="width: 98%"></div></div>
+                            <li class="bar">
+                                <div class="bar__metadata"><span>Adobe Figma</span><span>85%</span></div>
+                                <div class="bar__bg"><div class="bar__value" style="width: 80%"></div></div>
                             </li>
-                            <li>
+                            <li class="bar">
                                 <div class="bar__metadata"><span>Adobe Photoshop</span><span>90%</span></div>
-                                <div class="bar__bg"><div class="bar__value" style="width: 98%"></div></div>
+                                <div class="bar__bg"><div class="bar__value" style="width: 90%"></div></div>
                             </li>
-                            <li>
+                            <li class="bar">
                                 <div class="bar__metadata"><span>Adobe Illustrator</span><span>90%</span></div>
-                                <div class="bar__bg"><div class="bar__value" style="width: 98%"></div></div>
+                                <div class="bar__bg"><div class="bar__value" style="width: 90%"></div></div>
+                            </li>
+                        </ul>
+                    </section>
+                    <!-- Planning Skills -->
+                    <section class="skills__office">
+                        <h3 class="skills__title">Office Tool Skills</h3>
+                        <ul>
+                            <li class="bar">
+                                <div class="bar__metadata"><span>MS Excel</span><span>75%</span></div>
+                                <div class="bar__bg"><div class="bar__value" style="width: 75%"></div></div>
+                            </li>
+                            <li class="bar">
+                                <div class="bar__metadata"><span>MS PowerPoint</span><span>90%</span></div>
+                                <div class="bar__bg"><div class="bar__value" style="width: 90%"></div></div>
+                            </li>
+                            <li class="bar">
+                                <div class="bar__metadata"><span>MS Words</span><span>90%</span></div>
+                                <div class="bar__bg"><div class="bar__value" style="width: 90%"></div></div>
+                            </li>
+                            <li class="bar">
+                                <div class="bar__metadata"><span>Google Docs</span><span>90%</span></div>
+                                <div class="bar__bg"><div class="bar__value" style="width: 90%"></div></div>
                             </li>
                         </ul>
                     </section>
@@ -167,55 +167,63 @@
 
         <!-- Work -->
         <section id="work" class="section">
-            <h2 class="title">My work</h2>
-            <p class="description">Projects</p>
-            <ui>
-                <li><button>All <span>8</span></button></li>
-                <li><button>Front-end  <span>2</span></button></li>
-                <li><button>Culinary Arts  <span>2</span></button></li>
-            </ui>
-            <ul>
-                <!-- Project 1 -->
-                <li>
-                    <a href="#" target="_blink">
-                        <img src="images/projects/project1.webp" alt="project1">
-                        <div>
-                            <h3>Project #1</h3>
-                            <p>Clone coding with HTML, CSS</p>
-                        </div>
-                    </a>
-                </li>
-                <!-- Project 2 -->
-                <li>
-                    <a href="#" target="_blink">
-                        <img src="images/projects/project2.webp" alt="project2">
-                        <div>
-                            <h3>Project #2</h3>
-                            <p>Clone coding with HTML, CSS</p>
-                        </div>
-                    </a>
-                </li>
-                <!-- Project 3 -->
-                <li>
-                    <a href="#" target="_blink">
-                        <img src="images/projects/project3.webp" alt="project3">
-                        <div>
-                            <h3>Project #3</h3>
-                            <p>Clone coding with HTML, CSS</p>
-                        </div>
-                    </a>
-                </li>
-                <!-- Project 4 -->
-                <li>
-                    <a href="#" target="_blink">
-                        <img src="images/projects/project4.webp" alt="project4">
-                        <div>
-                            <h3>Project #4</h3>
-                            <p>Clone coding with HTML, CSS</p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+            <div class="max-container">
+                <h2 class="title">My work</h2>
+                <p class="description">Projects</p>
+                <ul class="categories">
+                    <li>
+                        <button class="category category--selected">All <span class="category__count">8</span></button>
+                    </li>
+                    <li>
+                        <button class="category">Front-end  <span class="category__count">2</span></button>
+                    </li class="category">
+                    <li>
+                        <button class="category">Culinary Arts  <span class="category__count">2</span></button>
+                    </li>
+                </ul>
+                <ul>
+                    <!-- Project 1 -->
+                    <li>
+                        <a href="#" target="_blink">
+                            <img src="images/projects/project1.webp" alt="project1">
+                            <div>
+                                <h3>Project #1</h3>
+                                <p>Clone coding with HTML, CSS</p>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- Project 2 -->
+                    <li>
+                        <a href="#" target="_blink">
+                            <img src="images/projects/project2.webp" alt="project2">
+                            <div>
+                                <h3>Project #2</h3>
+                                <p>Clone coding with HTML, CSS</p>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- Project 3 -->
+                    <li>
+                        <a href="#" target="_blink">
+                            <img src="images/projects/project3.webp" alt="project3">
+                            <div>
+                                <h3>Project #3</h3>
+                                <p>Clone coding with HTML, CSS</p>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- Project 4 -->
+                    <li>
+                        <a href="#" target="_blink">
+                            <img src="images/projects/project4.webp" alt="project4">
+                            <div>
+                                <h3>Project #4</h3>
+                                <p>Clone coding with HTML, CSS</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <!-- Testimonials -->
