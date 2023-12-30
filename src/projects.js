@@ -5,27 +5,34 @@ const categories = document.querySelector('.categories');
 const projects = document.querySelectorAll('.project');
 const projectsContainer = document.querySelector('.projects');
 
-categories.addEventListener('click', (event) => {
+categories.addEventListener('click', (event) => 
+{ 
+    console.log(event);
   const filter = event.target.dataset.category;
-  if (filter == null) {
+  if (filter == null) 
+  {
     return;
   }
-
   handleActiveSelection(event.target);
   filterProjects(filter);
 });
 
-// Active menu를 재설정
-function handleActiveSelection(target) {
+
+function handleActiveSelection(target) 
+{
+    // Active menu를 재설정
   const active = document.querySelector('.category--selected');
   active.classList.remove('category--selected');
   target.classList.add('category--selected');
 }
 
 // 프로젝트 필터링
-function filterProjects(filter) {
-  projects.forEach((project) => {
-    if (filter === 'all' || filter === project.dataset.type) {
+function filterProjects(filter) 
+{
+  projects.forEach((project) => 
+  {
+    if (filter === 'all' || filter === project.dataset.type) 
+    {
       project.style.display = 'block';
     } else {
       project.style.display = 'none';
@@ -33,7 +40,8 @@ function filterProjects(filter) {
   });
   
   projectsContainer.classList.add('anim-out');
-  setTimeout(() => {
+  setTimeout(() => 
+  {
     projectsContainer.classList.remove('anim-out');
   }, 250);
 }

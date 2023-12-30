@@ -28,10 +28,16 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/mediaScreen.css">
+
 
     <!-- JavaScript -->
     <script type="module" src="src/main.js" defer></script>
     <script type="module" src="src/projects.js" defer></script>
+    <script type="module" src="src/active_menu.js" defer></script>
     <!-- defer: JS 파일을 전부 다운받을때까지 기다리지 않고 HTML문서를 parse(분석)한 후 실행해되 됨 -->
 </head>
 <body>
@@ -55,7 +61,7 @@
             <i class="fa-solid fa-bars" aria-label="navigation menu"></i>
         </button>
     </header>
-
+    
     <!-- Main -->
     <main>
         <!-- Home -->
@@ -178,35 +184,41 @@
             <div class="max-container">
                 <h2 class="title">My work</h2>
                 <p class="description">Projects</p>
+
+                <!-- Project Select Buttons -->
                 <ul class="categories">
                     <li>
                         <button class="category category--selected" data-category="all">All <span class="category__count">8</span></button>
                     </li>
                     <li>
-                        <button class="category" data-category="front-end">Front-end  <span class="category__count">2</span></button>
+                        <button class="category" data-category="web-design">Web design  <span class="category__count">2</span></button>
+                    </li class="category">
+                    <li>
+                        <button class="category" data-category="front-end">Front-end  <span class="category__count">4</span></button>
                     </li class="category">
                     <li>
                         <button class="category" data-category="culinary">Culinary Arts  <span class="category__count">2</span></button>
                     </li>
                 </ul>
+
                 <ul class="projects">
                     <!-- Project 1 -->
-                    <li class="project" data-type="front-end">
+                    <li class="project" data-type="web-design">
                         <a href="#" target="_blink">
                             <img src="images/projects/project1.webp" alt="project1" class="project__img">
                             <div class="project__metadata">
                                 <h3 class="project__metadata__title">Project #1</h3>
-                                <p>Clone coding with HTML, CSS</p>
+                                <p>Web design and HTML, CSS coding</p>
                             </div>
                         </a>
                     </li>
                     <!-- Project 2 -->
-                    <li class="project" data-type="front-end">
+                    <li class="project" data-type="web-design">
                         <a href="#" target="_blink">
                             <img src="images/projects/project2.webp" alt="project2" class="project__img">
                             <div class="project__metadata">
                                 <h3 class="project__metadata__title">Project #2</h3>
-                                <p>Clone coding with HTML, CSS</p>
+                                <p>Web design and HTML, CSS coding</p>
                             </div>
                         </a>
                     </li>
@@ -231,7 +243,7 @@
                         </a>
                     </li>
                     <!-- Project 5 -->
-                    <li class="project" data-type="culinary">
+                    <li class="project" data-type="front-end">
                         <a href="#" target="_blink">
                             <img src="images/projects/project5.webp" alt="project5" class="project__img">
                             <div class="project__metadata">
@@ -241,7 +253,7 @@
                         </a>
                     </li>
                     <!-- Project 6 -->
-                    <li class="project" data-type="culinary">
+                    <li class="project" data-type="front-end">
                         <a href="#" target="_blink">
                             <img src="images/projects/project6.webp" alt="project6" class="project__img">
                             <div class="project__metadata">

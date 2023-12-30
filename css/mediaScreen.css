@@ -1,0 +1,120 @@
+/* 반응형 웹사이트(Responsive Web Design) - Media Content */
+@media screen and (max-width: 768px) {
+    /* Common */
+    .section {
+        padding: 4rem 2rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: start;
+        background-color: var(--color-primary);
+    }
+
+    .header__toggle {
+        display: block;
+    }
+
+    .header__menu {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        margin: 1rem 4rem;
+        gap: 1rem;
+    }
+
+    .header__menu.open {
+        display: flex;
+    }
+
+    .header__nav {
+        width: 100%;
+    }
+
+    /* Home */
+    #home {
+        padding: 3rem;
+    }
+
+    .home__title {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    /* About Me */
+    .majors {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .major {
+        width: 25rem;
+    }
+
+    .job {
+        justify-content: center;
+    }
+
+    /* Skills */
+    .skills {
+        grid-template-columns: 1fr;
+    }
+
+    /* Projects */
+    .categories {
+        flex-direction: column;
+    }
+
+    .category {
+        width: 100%;
+    }
+
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Testimonial */
+    .testimonials {
+        margin: 2rem;
+    }
+
+    .testimonial {
+        flex-direction: column;
+        position: relative;
+    }
+
+    .testimonial:nth-child(even) .testimonial__img {
+        order: 0;
+    }
+
+    .testimonial__img {
+        width: 110px;
+        height: 110px;
+        opacity: 1;
+        position: absolute;
+        top: -30px;
+        left: -50px;
+        transition: all 250ms ease-in;
+    }
+
+    .testimonial__bubble {
+        padding: 2rem;
+    }
+
+    .arrow-up {
+        font-size: 2rem;
+        width: 3rem;
+        height: 3rem;
+        bottom: 1.5rem;
+        right: 1.5rem;
+        line-height: 3rem; /* 가운데 정렬 */
+    }
+}
