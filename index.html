@@ -26,6 +26,9 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/33f8c7b48f.js" crossorigin="anonymous"></script>
 
+    <!-- Typeit -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
@@ -38,6 +41,7 @@
     <script type="module" src="src/main.js" defer></script>
     <script type="module" src="src/projects.js" defer></script>
     <script type="module" src="src/active_menu.js" defer></script>
+    <script type="module" src="src/type.js" defer></script>
     <!-- defer: JS 파일을 전부 다운받을때까지 기다리지 않고 HTML문서를 parse(분석)한 후 실행해되 됨 -->
 </head>
 <body>
@@ -61,7 +65,7 @@
             <i class="fa-solid fa-bars" aria-label="navigation menu"></i>
         </button>
     </header>
-    
+
     <!-- Main -->
     <main>
         <!-- Home -->
@@ -72,12 +76,25 @@
                 <p class="home__description">A front-end developer currently residing in Ontario, Canada</p>
                 <a class="home__contact_button" href="#contact">Contact Me</a>
             </div>
+            <!-- Wave bg -->
         </section>
 
         <!-- About -->
         <section id="about" class="section max-container">
             <h2 class="title">About Me</h2>
             <p class="description">A front end developer and a web designer currently residing in Ontario, Canada</p>
+            <!-- <div>
+                <ul>
+                    <li class="skills__ul skills__summary">Progressive experience in owning web-based projects from design to HTML, CSS, and JavaScript coding.</li>
+                    <li class="skills__ul skills__summary">Strong knowledge of typography, user interface design, and Adobe graphic software.</li>
+                    <li class="skills__ul skills__summary">Hardworking and reliable Web Developer that’s centered around customer service.</li>
+                    <li class="skills__ul skills__summary">Diligent about producing exceptionally clean, strong, and secure code.</li>
+                    <li class="skills__ul skills__summary">Proficient in mastering new skills and effectively works unsupervised.</li>
+                    <li class="skills__ul skills__summary">Strong work ethic, adaptability, time management, and interpersonal skills.</li>
+                    <li class="skills__ul skills__summary">Highly organized, proactive, and punctual with a team-oriented mentality. </li>
+                    <li class="skills__ul skills__summary">Motivated and responsible individual that’s ready to apply experience and knowledge within the workplace while furthering their educational growth.</li>
+                </ul>
+            </div> -->
             <ul class="majors">
                 <li class="major">
                     <i class="fa-solid fa-photo-film major__icon"></i>
@@ -104,16 +121,11 @@
 
         <!-- Skills -->
         <section id="skills" class="section">
+            <!-- skills bg -->
             <div class="max-container">
                 <h2 class="title">My skills</h2>
                 <p class="description">Skills & Attributes</p>
-                <p>
-                    Experience with all phases of the software life-cycle. 
-                    Passion for learning new technologies. 
-                    Capable of working within a team environment and independently. 
-                    Ability to plan and time schedule, work under strict time pressure and adapt quickly when needed.
-                </p>
-                
+                <div class="skills__container">
                 <!-- Skills Details -->
                 <div class="skills">
                     <!-- Programming Language Skills -->
@@ -131,6 +143,18 @@
                             <li class="bar">
                                 <div class="bar__metadata"><span>JavaScript</span><span>70%</span></div>
                                 <div class="bar__bg"><div class="bar__value" style="width: 70%"></div></div>
+                            </li>
+                            <li class="bar">
+                                <div class="bar__metadata"><span>Java</span><span>50%</span></div>
+                                <div class="bar__bg"><div class="bar__value" style="width: 50%"></div></div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <h5><span>• Version Control Systems:</span><span>Git, GitHub</span></h5>
+                            </li>
+                            <li>
+                                <h5><span>• Coding software:</span><span>Visual Studio Code, Intelij</span></h5>
                             </li>
                         </ul>
                     </section>
@@ -177,6 +201,7 @@
                 </div>
                 <!-- Etc -->
             </div>
+                <!-- Skills bg bottom -->
         </section>
 
         <!-- Work -->
@@ -340,6 +365,7 @@
 
     <!-- Footer -->
     <footer id="contact" class="section">
+        <!-- Footer bg -->
         <div class="max-container">
             <h2 class="title">Let&#39;s Talk</h2>
             <p class="description"><a href="mailto:amy.ahn.kr@google.com">amy.ahn.kr@google.com</a></p>

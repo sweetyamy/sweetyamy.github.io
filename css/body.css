@@ -1,11 +1,31 @@
 /* Home */
 #home {
+    position: relative;
     background-color: var(--color-primary);
+    background-image: var(--home-bg-svg);
     color: var(--color-text);
     padding: 5rem 1rem;
     padding-top: 7rem;
     text-align: center;
+    overflow: hidden;
+  }
+
+/* bg curve */
+#home::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(160% + 1.3px);
+    height: 84px;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    background-color: var(--color-white);
+    mask: var(--divider-single-wave);
+    -webkit-mask: var(--divider-single-wave);
 }
+
 
 .home__avatar {
     width: 250px;
@@ -13,7 +33,7 @@
     object-fit: cover;
     border-radius: 100%;
     border: 3px solid var(--color-accent);
-    margin-top: 4rem;
+    margin-top: 2rem;
     margin-bottom: 3rem;
 }
 
@@ -104,8 +124,24 @@
 
 /* Skills */
 #skills {
+    position: relative;
     background-color: var(--color-primary-variant);
     color: var(--color-text);
+}
+
+/* skills bg top */
+.skills::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(180% + 1.3px);
+    height: 33px;
+    overflow: hidden;
+    line-height: 0;
+    background-color: var(--color-white);
+    mask: var(--divider-multi-wave);
+    -webkit-mask: var(--divider-multi-wave);
 }
 
 .skills {
@@ -258,7 +294,7 @@
     transform: translateY(0px);
 }
 
-.project__metadata__title:after {
+.project__metadata__title::after {
     content: '';
     display: block;
     position: relative;

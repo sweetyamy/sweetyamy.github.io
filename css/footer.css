@@ -17,6 +17,22 @@
 #contact {
     background-color: var(--color-primary);
     color: var(--color-text);
+    position: relative;
+}
+
+/* footer bg */
+#contact::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% + 1.3px);
+    height: 36px;
+    overflow: hidden;
+    line-height: 0;
+    background-color: var(--color-white);
+    mask: var(--divider-arrow);
+    -webkit-mask: var(--divider-arrow);
 }
 
 .contact__links {
