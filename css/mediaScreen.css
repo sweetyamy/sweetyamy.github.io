@@ -56,7 +56,7 @@
     }
 
     .major {
-        width: 25rem;
+        width: 20rem;
     }
 
     .job {
@@ -74,7 +74,7 @@
     }
 
     .category {
-        width: 90%;
+        width: 100%;
     }
 
     .projects {
