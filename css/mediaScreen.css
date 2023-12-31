@@ -53,10 +53,11 @@
     .majors {
         flex-direction: column;
         align-items: center;
+        width: 90%;
     }
 
     .major {
-        width: 18rem;
+        width: 25rem;
     }
 
     .job {
