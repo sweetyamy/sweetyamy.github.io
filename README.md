@@ -7,5 +7,18 @@
   
  <p>
   <strong>Period:</strong> 2023. 12. 26 - 2023. 12. 30<br>
-  <strong>Skills:</strong> HTML, CSS, JavaScript, GitHub
+  <strong>Skills:</strong> Responsive webpage, HTML, CSS, JavaScript, GitHub
+ </p>
+
+ <p>
+  <h3>Needs troubleshooting</h3>
+  <ul>
+   <li>Arrow-up: It disappears when the page goes to the testimonials area.</li>
+   <li>Blocks the size control when you use it on your phone</li>
+  </ul>
+  <h3>Etc</h3>
+  <ul>
+   <li>Update Skills area</li>
+   <li>Update Projects area</li>
+  </ul>
  </p>
