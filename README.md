@@ -13,7 +13,9 @@
  <p>
   <h4>Needs troubleshooting</h3>
   <ul>
-   <li>Arrow-up: It disappears when the page goes to the testimonials area.</li>
+   <li style="color: red, text-decoration: line-through;">Arrow-up: It disappears when the page goes to the testimonials area. <b>- fixed</b></li>
+   The problem is that footers also use "position: relative;", so to place arrows in the first layer, you have to put "z-index" in a relative position.<br>
+   <i>position: fixed, relative; z-index: 2;</i>
    <li>Blocks the size control when you use it on your phone</li>
   </ul>
   <h4>Needs to be updated</h3>
