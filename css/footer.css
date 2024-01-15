@@ -1,8 +1,7 @@
 /* Arrow Up */
 .arrow-up {
     background-color: var(--color-primary);
-    position: fixed, 
-    relative; z-index: 2;
+    position: fixed;
     bottom: 3rem;
     right: 3rem;
     font-size: 3rem;
@@ -19,6 +18,7 @@
     background-color: var(--color-primary);
     color: var(--color-text);
     position: relative;
+    z-index: -1; 
 }
 
 /* footer bg */
@@ -50,3 +50,4 @@
 .contact__link:hover {
     color: var(--color-accent);
 }
+
