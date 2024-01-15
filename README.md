@@ -20,10 +20,10 @@
     z-index: -1;<br><br>
    </i>
    <li>Blocks the size control when you use it on your phone -> change idea (2024-01-15)</li> 
-   When a user watches this website on their phone, the design seems awkward if they reduce the size. 
+   When users watch this website on their phone, the design seems awkward if they reduce the size. 
    Therefore, I was not going to allow the user to scale this website using "user-scalable," but then the user can not zoom in on contents with their hands when they want/need. 
    So it was not a good idea for accessibility. 
-   I'm thinking about ways for the user to expand the browser, but not allow to reduce it. 
+   I'm thinking about ways for the user to zoom in the browser but not allow the user to zoom out more than the original size. 
   </ul>
   <h4>Needs to be updated</h3>
   <ul>
