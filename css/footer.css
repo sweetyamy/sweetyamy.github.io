@@ -1,18 +1,3 @@
-/* Arrow Up */
-.arrow-up {
-    background-color: var(--color-primary);
-    position: fixed;
-    bottom: 3rem;
-    right: 3rem;
-    font-size: 3rem;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 100%;
-    text-align: center;
-    box-shadow: 2.5px 2px 1px 1px var(--color-accent);
-    transition: opacity 300ms ease-in;
-}
-
 /* Footer */
 #contact {
     background-color: var(--color-primary);
