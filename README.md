@@ -1,7 +1,7 @@
 # Amy's Portfolio Website
  <p>
   <strong>Project:</strong> Clone coding from Dream Coding Academy<br>
-  @[https://github.com/dream-ellie](https://academy.dream-coding.com/)
+  @[https://github.com/dream-ellie] [https://academy.dream-coding.com/]
  </p>
  
  <p>
