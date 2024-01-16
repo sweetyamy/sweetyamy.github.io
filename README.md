@@ -10,4 +10,3 @@
  </p>
  
  <h4>🗂Notion</h4>
- [https://www.notion.so/amydc/8f31dc9972c44108967c0ccb54613015?v=bf810cb53cae44dd8956cf69c6028c34]
